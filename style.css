@@ -1,0 +1,50 @@
+.img{
+    width: 6rem;
+    height: 3rem;
+}
+.bold{
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.boldh3{
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.boldh5{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.boldh4{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.scolor{
+    background-color: #FCFEC4;
+}
+.mutted{
+    background-color: rgb(90, 90, 90);
+}
+.mutted1{
+    background-color: rgb(202, 202, 202);
+}.mutted2{
+    background-color: rgb(202, 91, 0);
+}
+.girlimage{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+.divcard{
+    margin: 3%;
+    padding: 3%;
+}
+.signlogo{
+    width:100px;
+    height:50px;
+}
+.bodycolor{
+    background-color: #FCFEC4;
+}
