@@ -3,6 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $database = "biblio";
+global $conn;
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);

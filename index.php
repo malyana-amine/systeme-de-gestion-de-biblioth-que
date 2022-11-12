@@ -1,5 +1,7 @@
 <?php
 require 'database.php';
+require 'functions.php';
+register();
 ?>
 
 <!DOCTYPE html>
@@ -45,10 +47,10 @@ require 'database.php';
       <h4 class=" boldh4 pb-3 mb-3">Your account is your key to<br> unlock a universe of opportunities</h4>
     </div>
 
-    <button class="m-2 pb-2 fs-4 fw-bold px-4 py-2 rounded-pill btn mutted2" type="submit">Register</button>
+    <button class="m-2 pb-2 fs-4 fw-bold px-4 py-2 rounded-pill btn mutted2" href="register.php" type="submit">Register</button>
 
   </div>
-  <div class="col-12 col-sm-5 text-sm-start text-center">
+  <div class="col-12 col-sm-5 text-sm-start text-center text-sm-end">
     <img class=" " src="maquette/logo/71KTA2XIDFL._AC_SY550_.jpg" alt="">
   </div>
 </section>

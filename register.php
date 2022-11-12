@@ -1,3 +1,9 @@
+<?php
+require ("database.php");
+require ("functions.php");
+register();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,15 +20,15 @@
              <img class="girlimage" src="maquette/logo/5155417-HSC00001-7.jpg" alt="image11">
             
         </div>
-        <div class="col-md-6 col-12 text-center py-5">
+        <form method="POST" action="functions.php" class="col-md-6 col-12 text-center py-5">
                 <img class="signlogo" src="maquette/logo/Untitled-2.png" alt="logo">
                 <h1 class="fw-bold">The Bookworm </h1>
-                <form method="POST" class="d-flex flex-column pe-md-4 px-4">      
-                    <input class="my-3" type="text" placeholder="First name">
-                    <input class="my-3" type="text" placeholder="Last name">
-                    <input class="my-3" type="email" placeholder="Email">
-                    <input class="my-3" type="password" placeholder="Password">
-                </form>
+                <div class="d-flex flex-column pe-md-4 px-4">      
+                    <input name="fname1" class="my-3" type="text" placeholder="First name">
+                    <input name="lname1" class="my-3" type="text" placeholder="Last name">
+                    <input name="email1" class="my-3" type="email" placeholder="Email">
+                    <input name="password1" class="my-3" type="password" placeholder="Password">
+            </div>
                 <div class="text-start px-4">
                     <div class="form-check ">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -31,11 +37,11 @@
                         </label>
                       </div>
                 </div>
-                <button class="m-2 pb-2 fs-4 fw-bold px-4 py-2 rounded-pill btn mutted2" type="submit">Register</button>
+                <button name="submit" type="submit" class="m-2 pb-2 fs-4 fw-bold px-4 py-2 rounded-pill btn mutted2" >Register</button>
                 <div>Allready have account? <a class="text-decoration-none" href="#">Login</a></div>
                
 
-        </div>
+</form>
 
     </section>
 
