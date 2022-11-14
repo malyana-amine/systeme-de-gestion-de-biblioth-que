@@ -1,6 +1,6 @@
 <?php
 require ("database.php");
-require ("functions.php");
+require ("register-function.php");
 register();
 ?>
 
@@ -20,7 +20,7 @@ register();
              <img class="girlimage" src="maquette/logo/5155417-HSC00001-7.jpg" alt="image11">
             
         </div>
-        <form method="POST" action="functions.php" class="col-md-6 col-12 text-center py-5">
+        <form method="POST" class="col-md-6 col-12 text-center py-5">
                 <img class="signlogo" src="maquette/logo/Untitled-2.png" alt="logo">
                 <h1 class="fw-bold">The Bookworm </h1>
                 <div class="d-flex flex-column pe-md-4 px-4">      

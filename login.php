@@ -1,6 +1,6 @@
 <?php
-require ("database.php");
-require ("functions.php");
+include ("database.php");
+include ("login-function.php");
 login();
 ?>
 
