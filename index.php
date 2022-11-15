@@ -1,7 +1,5 @@
 <?php
 require 'database.php';
-require 'functions.php';
-register();
 ?>
 
 <!DOCTYPE html>
