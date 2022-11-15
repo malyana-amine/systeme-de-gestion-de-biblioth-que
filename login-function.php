@@ -2,12 +2,14 @@
 require 'database.php';
 
 function login(){
+    session_start();
     global $conn;
 
 
     if(isset($_POST['submit'])){
         $email = $_POST['email'];
         $password = $_POST['password'];
+        var_dump($password);
 
         $sql =" select * from `admin` where email = '$email' and password = '$password' ";
         

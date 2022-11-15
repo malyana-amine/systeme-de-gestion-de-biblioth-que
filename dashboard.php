@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +10,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <title>Document</title>
 </head>
-<body>
-    <div class="">zaedcazedrghc</div>
-    <div></div>
+<body class="d-flex">
+    <div class="bg-success col-2 d-flex flex-column justify-content-between vh-100">
+
+        <img class="logo2 px-5 py-2 " src="maquette/logo/Untitled-2.png" alt="">
+
+        <div class="text-start d-flex  pb-5 mb-5 ">
+            <div class="col-4"></div>
+            <ul class="text-white list-unstyled ">
+                <li class="py-3"><i class="fa-solid fa-house-user"></i><a class="text-decoration-none text-white " href="#"> dashboard</a> </li>
+                <li class="py-3"><i class="fa-solid fa-user"></i><a class="text-decoration-none text-white" href="#"> Books</a> </li>
+                <li class="py-3"><i class="fa-solid fa-book "></i><a class="text-decoration-none text-white" href="#"> users</a> </li>
+            </ul>
+        </div>
+        <div class=" d-flex flex-column align-items-center">
+           
+            
+                
+                <div class="btn-group dropup pb-3">
+                    <h6><?php echo  $_SESSION['last_name'].' '.$_SESSION['last_name']  ?> </h6>
+                    <div type="" class="" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li class="py-3"><i class="fa-solid fa-house-user"></i><a class="text-decoration-none text-red " href="#"> dashboard</a> </li>
+                        <li class="py-3"><i class="fa-solid fa-user"></i><a class="text-decoration-none text-red" href="#"> Books</a> </li>
+                        <li class="py-3"><i class="fa-solid fa-book "></i><a class="text-decoration-none text-red" href="#"> users</a> </li>
+                    </ul>
+                  </div>
+              </div>
+        </div>
+
+    <div class="bg-danger col-10">
+        <div>
+            <h1 class="px-5 py-3">Dashboard</h1>
+        </div>
+        <div class="bg-dark mx-5 divline"></div>
+        <div class=" d-flex justify-content-between flex-wrap p-5">
+
+            <div class="bg-warning divs d-flex justify-content-around m-2">
+                <h3 class=" pt-4">Books</h3>
+                <h3 class="pt-5 mt-5">2</h3>
+            </div>
+            <div class="bg-warning divs d-flex justify-content-around m-2">
+                <h3 class=" pt-4">Books</h3>
+                <h3 class="pt-5 mt-5">2</h3>
+            </div>
+            <div class="bg-warning divs m-2">
+                <h3 class="px-5 pt-4">Books</h3>
+            </div>
+
+        </div>
+
+
+    </div>
+    
 
 
 
