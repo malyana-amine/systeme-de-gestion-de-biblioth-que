@@ -20,6 +20,8 @@ function login(){
             $data=mysqli_fetch_array($result);
             $_SESSION['first_name'] =$data['first_name'] ;
             $_SESSION['last_name'] =$data['last_name'] ;
+            $_SESSION['id'] =$data['id'] ;
+
 
             $_SESSION['email'] = $email ;
             $_SESSION['password'] = $password;
