@@ -1,4 +1,3 @@
-let cc = document.getElementById("imageupdat").getAttribute("src");
 function update(id) {
     let btn_titleid = "title"+id;
     let btn_descriptionid = "description" + id;
@@ -10,7 +9,8 @@ function update(id) {
     let btn_description = document.getElementById(btn_descriptionid).textContent;
 
     let btn_image = document.getElementById(btn_imageid).getAttribute("src");
-    // remplire
+    console.log(btn_image);
+    // remplire.
     
 
     document.getElementById("recipient-name1").value = btn_title;
@@ -18,8 +18,7 @@ function update(id) {
     document.getElementById("hid").value = id ;
 
     document.getElementById("message-text1").value = btn_description;
-    cc = btn_image;
 
+    document.getElementById("imageupdat").setAttribute("src",btn_image);
+    
     }
-
-    console.log(cc);

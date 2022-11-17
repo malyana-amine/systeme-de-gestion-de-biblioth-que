@@ -9,15 +9,24 @@ function updatebook(){
 
         $title = $_POST['title'];
         $description = $_POST['description'];
+        $image = $_FILES['image1']['name'];
+       
+
+            $filename = uniqid();
+            $extension = pathinfo( $image, PATHINFO_EXTENSION);
+            $newname = "book-".$filename . "." . $extension;
+
+            $target = "img/".$newname;
+            move_uploaded_file($_FILES['image1']['tmp_name'], $target);
          
         $id   =  $_POST['hidinput'];
        // die($type . $priority . $status . $title . $date . $description .$id) ;
         $sql1 = "UPDATE `books` 
-                SET`title`='$title',`description`='$description'
+                SET`title`='$title',`description`='$description',`img`='$newname'
                  WHERE `id`='$id'";
 
             mysqli_query($conn,$sql1);
-
+            header('location: books.php');
     }
            
       

@@ -24,6 +24,7 @@ function savebook(){
              $sql = " INSERT INTO `books`(`title`, `description`, `publisher`, `img`) VALUES ('$title','$description','$id','$newname')"; 
  
             mysqli_query($conn,$sql);
+            
             header('location: books.php');
          }
                

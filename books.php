@@ -3,6 +3,7 @@ require 'database.php';
 require 'getbook.php';
 require 'save.php';
 require 'update.php';
+require 'deletebook.php';
 ?>
 
 
@@ -28,6 +29,7 @@ global $conn ;
 getbook();
 savebook();
 updatebook();
+deletebook();
 ?>
     <div class="bg-success col-2 d-flex flex-column justify-content-between vh-100">
 
@@ -163,9 +165,9 @@ updatebook();
         <div class="mb-3">
             <label for="formFile" class="form-label">apdate you cover</label>
             <div>
-                <img id="imageupdat" src="img/book-6375ffd738556.jpg" alt="books">
+                <img name="image1" id="imageupdat" src="" alt="books">
             </div>
-            <input name="image" class="form-control" type="file" id="formFile1">
+            <input name="image1" class="form-control" type="file" id="formFile1">
         </div>
         </form>
       </div>
