@@ -2,6 +2,7 @@
 require 'database.php';
 require 'getbook.php';
 require 'save.php';
+require 'update.php';
 ?>
 
 
@@ -26,6 +27,7 @@ require 'save.php';
 global $conn ;
 getbook();
 savebook();
+updatebook();
 ?>
     <div class="bg-success col-2 d-flex flex-column justify-content-between vh-100">
 
@@ -69,21 +71,21 @@ savebook();
 
 
         
-        <button class=" d-flex justify-content-between p-1">
+        <button onclick="update(<?php  echo $row['id']  ?>)"  class=" d-flex justify-content-between p-1" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="">
 
             <div class="bg-warning divs2 d-flex justify-content-between  align-items-center m-2">
                 <div class=" h-100">
                     <?php if($row['img']){?>
-                        <img class="imagebook p-2" src="img/<?php echo $row['img']?>" alt="book1">
+                        <img class="imagebook p-2" id="image<?php  echo $row['id'] ?>" src="img/<?php echo $row['img']?>" alt="book1">
                      <?php }else{ ?>
                         <img class="imagebook p-2" src="img/9780063040885_p0_v4_s1200x630.jpg" alt="book1">
                         <?php }?>
                 </div>
-                <div class=""><?php  echo $row['title']  ?></div>
+                <div id="title<?php  echo $row['id']  ?>" class=""><?php  echo $row['title']  ?></div>
                 <div class="bg-dark m-4 divline1"></div>
                 <div class=""><?php echo $row['fn'] .' '. $row['ln']  ?></div>
                 <div class="bg-dark m-4 divline1"></div>
-                <div class=""><?php  echo ''.$row['description'].''  ?></div>
+                <div id="description<?php  echo $row['id']  ?>" class=""><?php  echo ''.$row['description'].''  ?></div>
                 
             </div>
            
@@ -116,10 +118,11 @@ savebook();
           <div class="mb-3">
             <label for="message-text" class="col-form-label">Description</label>
             <textarea name="description" class="form-control" id="message-text"></textarea>
-          </div>
-          <div>
-            <input name="image" type="file">
-          </div>
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Choose your cover</label>
+            <input name="image" class="form-control" type="file" id="formFile">
+        </div>
         </form>
       </div>
       <div class="modal-footer">
@@ -134,9 +137,62 @@ savebook();
 
 
 
+
+
+
+
+
+<form enctype="multipart/form-data" method="POST" class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New book</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Titlle</label>
+            <input name="title" type="text" class="form-control" id="recipient-name1">
+            <input type="hidden" name="hidinput" class="id"  id="hid" value="">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Description</label>
+            <textarea name="description" class="form-control" id="message-text1"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">apdate you cover</label>
+            <div>
+                <img id="imageupdat" src="img/book-6375ffd738556.jpg" alt="books">
+            </div>
+            <input name="image" class="form-control" type="file" id="formFile1">
+        </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" name="delete" class="btn btn-primary">delete</button>
+        <button type="submit" name="update" class="btn btn-primary">update</button>
+        
+      </div>
+    </div>
+  </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
     <!-- scripts  -->
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="jsFiles/main.js"></script>
 </body>
 </html>
