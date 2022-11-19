@@ -1,7 +1,6 @@
 <?php
 require ("database.php");
 require ("register-function.php");
-require 'checklogin.php';
 register();
 ?>
 
@@ -21,10 +20,12 @@ register();
              <img class="girlimage" src="maquette/logo/5155417-HSC00001-7.jpg" alt="image11">
             
         </div>
+        
         <form method="POST" class="col-md-6 col-12 text-center py-5">
                 <img class="signlogo" src="maquette/logo/Untitled-2.png" alt="logo">
                 <h1 class="fw-bold">The Bookworm </h1>
-                <div class="d-flex flex-column pe-md-4 px-4">      
+                <div class="d-flex flex-column pe-md-4 px-4"> 
+                    <div class=" bg-warning p-2 "><p> <?php echo $errors ?></p></div>     
                     <input name="fname1" class="my-3" type="text" placeholder="First name">
                     <input name="lname1" class="my-3" type="text" placeholder="Last name">
                     <input name="email1" class="my-3" type="email" placeholder="Email">
