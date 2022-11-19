@@ -1,6 +1,7 @@
 <?php
 include ("database.php");
 include ("login-function.php");
+//require 'checklogin.php';
 login();
 ?>
 

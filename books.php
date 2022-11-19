@@ -4,6 +4,8 @@ require 'getbook.php';
 require 'save.php';
 require 'update.php';
 require 'deletebook.php';
+require 'checklogin.php';
+require 'logout.php';
 ?>
 
 
@@ -47,17 +49,17 @@ deletebook();
            
             
                 
-                <div class="btn-group dropup pb-3">
-                    <h6>amine malyana</h6>
+                <form method="POST" class="btn-group dropup pb-3">
+                  <div id="profilpic" class = "bg-danger rounded-circle" style="width:50px ; height:50px" ></div>
+                    <h6 id="flname"><?php echo  $_SESSION['last_name'].' '.$_SESSION['last_name'] ?></h6>
                     <div type="" class="" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-gear"></i>
                     </div>
                     <ul class="dropdown-menu bg-danger">
-                        <li class="py-3"><i class="fa-solid fa-house-user"></i><a class="text-decoration-none text-white " href="#"> dashboard</a> </li>
-                        <li class="py-3"><i class="fa-solid fa-user"></i><a class="text-decoration-none text-red" href="#"> Books</a> </li>
-                        <li class="py-3"><i class="fa-solid fa-book "></i><a class="text-decoration-none text-red" href="#"> users</a> </li>
+                        <li class="py-1"><button class="text-decoration-none text-warning" href="#"> Profil</button> </li>
+                        <li class="py-1"><button type="submit" name="logout" class="text-decoration-none text-red" href="#"> Log out</button> </li>
                     </ul>
-                  </div>
+                  </form>
               </div>
         </div>
 

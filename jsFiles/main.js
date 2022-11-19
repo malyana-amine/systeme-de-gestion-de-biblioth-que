@@ -22,3 +22,15 @@ function update(id) {
     document.getElementById("imageupdat").setAttribute("src",btn_image);
     
     }
+
+    // get first letre of the user name 
+
+
+    let flname = document.getElementById("flname").textContent;
+    let profpic = document.getElementById("profilpic").textContent = flname[0].toUpperCase() ;
+
+    
+
+    
+
+    

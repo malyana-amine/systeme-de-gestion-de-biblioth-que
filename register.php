@@ -1,6 +1,7 @@
 <?php
 require ("database.php");
 require ("register-function.php");
+require 'checklogin.php';
 register();
 ?>
 
