@@ -26,6 +26,7 @@ function register() {
         mysqli_query($conn,$sql);
         header('location: login.php');
     }}
+    
 
 };
 

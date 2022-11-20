@@ -21,12 +21,13 @@ login();
                 <img class="signlogo ps-4" src="maquette/logo/Untitled-2.png" alt="logo">
                 <h1 class="fw-bold ps-4">The Bookworm </h1>
                 <div class="d-flex flex-column ps-md-4 px-4">      
-                    <input name="email" class="my-3" type="email" placeholder="Email">
-                    <input name="password" class="my-3" type="password" placeholder="Password">
+                    <input name="email" class="my-3" type="email" placeholder="Email" value="<?php getcookie('email'); ?>">
+                    <input name="password" class="my-3" type="password" placeholder="Password" value="<?php getcookie('pass'); ?>">
                 </div>
                 <div class="text-start ps-4">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="checked">
                         <label class="form-check-label" for="flexCheckDefault">Remenber me</label>
                       </div>
                 </div>
