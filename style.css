@@ -68,9 +68,14 @@
 }
 .imagebook{
     height: 100%;
-    width: 130px;
+    width: 110px;
     }
 .divline1{
         width:2px;
         height: 90%;
     }
+
+   .divpad{
+    padding-left: 11px;
+    padding-top: 2px;
+   }

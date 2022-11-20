@@ -33,7 +33,7 @@ savebook();
 updatebook();
 deletebook();
 ?>
-    <div class="bg-success col-2 d-flex flex-column justify-content-between vh-100">
+    <div class="bg-dark col-2 d-flex flex-column justify-content-between vh-100">
 
         <img class="logo2 px-5 py-2 " src="maquette/logo/Untitled-2.png" alt="">
 
@@ -50,53 +50,87 @@ deletebook();
             
                 
                 <form method="POST" class="btn-group dropup pb-3">
-                  <div id="profilpic" class = "bg-danger rounded-circle" style="width:50px ; height:50px" ></div>
-                    <h6 id="flname"><?php echo  $_SESSION['last_name'].' '.$_SESSION['last_name'] ?></h6>
+                  <div class="align-items-center d-flex ">
+                  <div id="profilpic" class = "bg-warning rounded-circle fs-5 divpad " style="width:35px ; height:35px" ></div>
+                    <h6 class="text-white px-4 pt-2" id="flname"><?php echo  $_SESSION['first_name'].' '.$_SESSION['last_name'] ?></h6>
                     <div type="" class="" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-gear"></i>
+                        <i class="text-white fa-solid fa-gear"></i>
                     </div>
-                    <ul class="dropdown-menu bg-danger">
-                        <li class="py-1"><button class="text-decoration-none text-warning" href="#"> Profil</button> </li>
-                        <li class="py-1"><button type="submit" name="logout" class="text-decoration-none text-red" href="#"> Log out</button> </li>
+                  
+                    <ul class="dropdown-menu bg-dark p-0 m-0">
+                        <li class="py-1 p-2"><a class="text-decoration-none text-white" href="#"> Profil </a>
+                        <li class="py-1 p-2"><a type="submit" name="logout" class="text-decoration-none text-white" href="#"> Log out</a> </li>
                     </ul>
+                  </div>
                   </form>
               </div>
         </div>
 
-    <div class="bg-danger col-10">
-        <div>
+    <div class="bodycolor col-10 ">
+        <div class="d-flex justify-content-between">
             <h1 class="px-5 py-3">Dashboard</h1>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="">add Book</button>
+            <button  type="button" class="btn btn-primary p-2 m-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="">add Book</button>
         </div>
         <div class="bg-dark mx-5 divline"></div>
 
-        <?php
+
+
+        <table class="table">
+                        <thead>
+                            <tr class=" text-muted">
+                                
+                               
+                                <th scope="col" style="font-size:14px;">Lectures</th>
+                                <th scope="col" style="font-size:14px;">N° Enroller</th>
+                                <th scope="col" style="font-size:14px;">Course time</th>
+                                <th scope="col" style="font-size:14px;">Course time</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        <?php
 								foreach(array_values($GLOBALS['result']) as $row ){ ?>
-
-
-        
-        <button onclick="update(<?php  echo $row['id']  ?>)"  class=" d-flex justify-content-between p-1" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="">
-
-            <div class="bg-warning divs2 d-flex justify-content-between  align-items-center m-2">
-                <div class=" h-100">
-                    <?php if($row['img']){?>
+                
+                
+                
+                <tr onclick="update(<?php  echo $row['id']  ?>)"  class="" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="">
+             
+                <td class="align-middle">
+                  <?php if($row['img']){?>
                         <img class="imagebook p-2" id="image<?php  echo $row['id'] ?>" src="img/<?php echo $row['img']?>" alt="book1">
                      <?php }else{ ?>
                         <img class="imagebook p-2" src="img/9780063040885_p0_v4_s1200x630.jpg" alt="book1">
                         <?php }?>
-                </div>
-                <div id="title<?php  echo $row['id']  ?>" class=""><?php  echo $row['title']  ?></div>
-                <div class="bg-dark m-4 divline1"></div>
-                <div class=""><?php echo $row['fn'] .' '. $row['ln']  ?></div>
-                <div class="bg-dark m-4 divline1"></div>
-                <div id="description<?php  echo $row['id']  ?>" class=""><?php  echo ''.$row['description'].''  ?></div>
-                
-            </div>
-           
-        </button>
+                  </td>
 
-                             <?php   }
-                             ?>
+
+                  <td class="align-middle">
+                  <div id="title<?php  echo $row['id']  ?>" class=""><?php  echo $row['title']  ?></div>
+                  </td>
+
+                  <td class="align-middle">
+                    <div class=""><?php echo $row['fn'] .' '. $row['ln']  ?></div>
+                </td>
+
+                <td class="align-middle">
+                <div id="description<?php  echo $row['id']  ?>" class=""><?php  echo ''.$row['description'].''  ?></div>
+                </td>
+                  
+                     </tr>
+                       <?php   }
+                             ?>        
+              </tbody>
+                     </table>
+
+       
+
+
+       
+
+
+        
+
 
     </div>
     
