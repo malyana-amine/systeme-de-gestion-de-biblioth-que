@@ -22,9 +22,16 @@ require 'logout.php';
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://parsleyjs.org/src/parsley.css">
+    
+
+
     <title>Document</title>
 </head>
 <body class="d-flex">
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <script defer src="https://parsleyjs.org/dist/parsley.min.js"></script>
 
 <?php
 global $conn ;
@@ -51,8 +58,8 @@ deletebook();
                 
                 <form method="POST" class="btn-group dropup pb-3">
                   <div class="align-items-center d-flex ">
-                  <div id="profilpic" class = "bg-warning rounded-circle fs-5 divpad " style="width:35px ; height:35px" ></div>
-                    <h6 class="text-white px-4 pt-2" id="flname"><?php echo  $_SESSION['first_name'].' '.$_SESSION['last_name'] ?></h6>
+                  <div id="profilpic" class = "bg-warning rounded-circle fs-5 divpad  " style="width:35px ; height:35px" ></div>
+                    <h6 class="text-white ps-1 pe-3 pt-2" id="flname"><?php echo  $_SESSION['first_name'].' '.$_SESSION['last_name'] ?></h6>
                     <div type="" class="" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="text-white fa-solid fa-gear"></i>
                     </div>
@@ -143,11 +150,11 @@ deletebook();
         <form>
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Titlle</label>
-            <input name="title" type="text" class="form-control" id="recipient-name">
+            <input name="title" type="text" class="form-control" id="recipient-name" required>
           </div>
           <div class="mb-3">
             <label for="message-text" class="col-form-label">Description</label>
-            <textarea name="description" class="form-control" id="message-text"></textarea>
+            <textarea name="description" class="form-control" id="message-text" required></textarea>
         </div>
         <div class="mb-3">
             <label for="formFile" class="form-label">Choose your cover</label>
