@@ -59,7 +59,7 @@ deletebook();
                   
                     <ul class="dropdown-menu bg-dark p-0 m-0">
                         <li class="py-1 p-2"><a class="text-decoration-none text-white" href="#"> Profil </a>
-                        <li class="py-1 p-2"><a type="submit" name="logout" class="text-decoration-none text-white" href="#"> Log out</a> </li>
+                        <li class="py-1 p-2"><input type="submit" name="logout" value="Logout" class="text-decoration-none text-white border-0 bg-transparent" > Log out </li>
                     </ul>
                   </div>
                   </form>
@@ -73,17 +73,16 @@ deletebook();
         </div>
         <div class="bg-dark mx-5 divline"></div>
 
-
-
-        <table class="table">
+        <div class="p-5">
+        <table class="table ">
                         <thead>
                             <tr class=" text-muted">
                                 
                                
-                                <th scope="col" style="font-size:14px;">Lectures</th>
-                                <th scope="col" style="font-size:14px;">N° Enroller</th>
-                                <th scope="col" style="font-size:14px;">Course time</th>
-                                <th scope="col" style="font-size:14px;">Course time</th>
+                                <th scope="col" style="font-size:14px;">Book cover</th>
+                                <th scope="col" style="font-size:14px;">Titlle</th>
+                                <th scope="col" style="font-size:14px;">Publisher</th>
+                                <th scope="col" style="font-size:14px;">Description</th>
                                 
                             </tr>
                         </thead>
@@ -123,14 +122,7 @@ deletebook();
               </tbody>
                      </table>
 
-       
-
-
-       
-
-
-        
-
+                     </div>
 
     </div>
     
@@ -201,7 +193,7 @@ deletebook();
         <div class="mb-3">
             <label for="formFile" class="form-label">apdate you cover</label>
             <div>
-                <img name="image1" id="imageupdat" src="" alt="books">
+                <img name="image1" class="imagebook p-2" id="imageupdat" src="" alt="books">
             </div>
             <input name="image1" class="form-control" type="file" id="formFile1">
         </div>
