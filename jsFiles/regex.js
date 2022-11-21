@@ -28,7 +28,7 @@ inputs.forEach(input => {
         validatePassword();
         validateName();
         validatelName();
-        if((email_regex.test(email.value)) || !(password_regex.test(password.value)) || !(name_regex.test(fname.value)) || !(name_regex.test(lname.value))){
+        if((email_regex.test(email.value)) && (password_regex.test(password.value)) && (name_regex.test(fname.value)) && (name_regex.test(lname.value))){
             signup.disabled=false;
         }else{
             signup.disabled=true;
