@@ -32,7 +32,7 @@ login();
                       </div>
                 </div>
                 <button class="ms-4 m-2 pb-2 fs-4 fw-bold px-4 py-2 rounded-pill btn mutted2" name="submit" type="submit">Sign In</button>
-                <div class="ps-md-4 px-4">You dont have acoount? <a class="text-decoration-none" href="#">register</a></div>
+                <div class="ps-md-4 px-4">You dont have acoount? <a class="text-decoration-none" href="register.php">register</a></div>
                
 
 </form>

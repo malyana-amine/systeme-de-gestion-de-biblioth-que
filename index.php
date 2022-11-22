@@ -20,8 +20,8 @@ require 'database.php';
           <div class=" " id="navbarNavDropdown">
             <div class="container-fluid ">
                 <div class="d-flex ">
-                  <button class="fw-bold text-white pb-2 mx-4 fs-5 px-4 py-1 rounded-pill btn mutted" type="submit">Sign In</button>
-                  <button class="fw-bold pb-2 mx-0 fs-5 px-4 py-1 rounded-pill btn mutted1 d-none d-sm-block" type="submit">Register</button>
+                  <a href="login.php" class="fw-bold text-white pb-2 mx-4 fs-5 px-4 py-1 rounded-pill btn mutted" type="submit">Log In</a>
+                  <a href="register.php" class="fw-bold pb-2 mx-0 fs-5 px-4 py-1 rounded-pill btn mutted1 d-none d-sm-block" type="submit">Register</a>
                 </div>
               </div>
           </div>
@@ -45,7 +45,7 @@ require 'database.php';
       <h4 class=" boldh4 pb-3 mb-3">Your account is your key to<br> unlock a universe of opportunities</h4>
     </div>
 
-    <button class="m-2 pb-2 fs-4 fw-bold px-4 py-2 rounded-pill btn mutted2" href="register.php" type="submit">Register</button>
+    <a class="m-2 pb-2 fs-4 fw-bold px-4 py-2 rounded-pill btn mutted2" href="register.php" type="submit">Register</a>
 
   </div>
   <div class="col-12 col-sm-5 text-sm-start text-center text-sm-end">
