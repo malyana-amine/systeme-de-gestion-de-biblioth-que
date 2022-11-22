@@ -1,29 +1,27 @@
-//get the submit button element of the form
-const signup = document.querySelector(".registervalidation");
-//-------get the input element 
-const inputs = document.querySelectorAll("input");
-const fname = document.querySelector(".fname");
-const lname = document.querySelector(".lname");
-const email = document.querySelector(".email");
-const password = document.querySelector(".password");
 
-// -------get the paragraphs that will show the error
-const fname_error = document.querySelector(".fname_error");
-const lname_error = document.querySelector(".lname_error");
-const email_error = document.querySelector(".email_error");
-const password_error = document.querySelector(".pass_error");
+let signup = document.querySelector(".registervalidation");
 
-//regex for email validation
-const email_regex = /^[a-zA-Z]+@[a-zA-Z]+.com$/;
-//regex for password validation
-const password_regex = /^[a-zA-Z0-9]{6,}$/;
-//regex for name validation
-const name_regex = /^[a-zA-Z]{3,}$/;
+let inputs = document.querySelectorAll("input");
+let fname = document.querySelector(".fname");
+let lname = document.querySelector(".lname");
+let email = document.querySelector(".email");
+let password = document.querySelector(".password");
+
+
+let fname_error = document.querySelector(".fname_error");
+let lname_error = document.querySelector(".lname_error");
+let email_error = document.querySelector(".email_error");
+let password_error = document.querySelector(".pass_error");
+
+
+let email_regex = /^[a-zA-Z]+@[a-zA-Z]+.com$/;
+let password_regex = /^[a-zA-Z0-9]{6,}$/;
+let name_regex = /^[a-zA-Z]{3,}$/;
 
 signup.disabled=true;
 
 inputs.forEach(input => {
-    input.addEventListener("keyup", () => {
+    input.addEventListener("keyup", function() {
         validateEmail();
         validatePassword();
         validateName();

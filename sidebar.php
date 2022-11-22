@@ -5,19 +5,19 @@
 <div class="text-start d-flex  pb-5 mb-5 ">
     <div class="col-4"></div>
     <ul class="text-white list-unstyled ">
-        <li class="py-3"><i class="fa-solid fa-house-user"></i><a class="text-decoration-none text-white " href="#"> dashboard</a> </li>
-        <li class="py-3"><i class="fa-solid fa-user"></i><a class="text-decoration-none text-white" href="#"> Books</a> </li>
-        <li class="py-3"><i class="fa-solid fa-book "></i><a class="text-decoration-none text-white" href="#"> users</a> </li>
+        <li class="py-3 d-flex"><i class=" pe-3 pt-1 fa-solid fa-house-user"></i><a class="text-decoration-none text-white d-none d-md-block " href="#"> dashboard</a> </li>
+        <li class="py-3 d-flex"><i class="pe-3 pt-1 fa-solid fa-book"></i><a class="text-decoration-none text-white d-none d-md-block" href="#"> Books</a> </li>
+        <li class="py-3 d-flex"><i class="pe-3 pt-1 fa-solid fa-book "></i><a class="text-decoration-none text-white d-none d-md-block" href="#"> users</a> </li>
     </ul>
 </div>
 <div class=" d-flex flex-column align-items-center">
    
     
         
-<form method="POST" class="btn-group dropup pb-3">
+<form method="POST" class="btn-group dropup pb-3 ">
           <div class="align-items-center d-flex ">
           <div id="profilpic" class = "bg-warning rounded-circle fs-5 divpad " style="width:35px ; height:35px" ></div>
-            <h6 class="text-white ps-1 pe-3 pt-2" id="flname"><?php echo  $_SESSION['first_name'].' '.$_SESSION['last_name'] ?></h6>
+            <h6 class="text-white ps-1 pe-3 pt-2 d-none d-sm-block" id="flname"><?php echo  $_SESSION['first_name'].' '.$_SESSION['last_name'] ?></h6>
             <div type="" class="" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="text-white fa-solid fa-gear"></i>
             </div>

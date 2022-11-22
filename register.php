@@ -25,7 +25,7 @@ register();
                 <img class="signlogo" src="maquette/logo/Untitled-2.png" alt="logo">
                 <h1 class="fw-bold">The Bookworm </h1>
                 <div class="d-flex flex-column pe-md-4 px-4"> 
-                    <div class=" bg-warning p-2 "><p> <?php echo $errors ?></p></div>  
+                    <div class="text-danger"><p> <?php echo $errors ?></p></div>  
                     <div class="my-3">
                     <input name="fname1" class="w-75 fname" type="text" placeholder="First name">
                     <div class=" text-danger fname_error"></div>
@@ -41,13 +41,6 @@ register();
                     <div class=" text-danger pass_error"></div>
                    </div>
         </div>
-                <!-- <div class="text-start px-4">
-                    <div class="form-check ">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            I agree all statment<a class="text-decoration-none" href="#">Terms & Condition</a>
-                        </label>
-                      </div> -->
                 </div>
                 <button name="submit" type="submit" class="m-2 pb-2 fs-4 fw-bold px-4 py-2 rounded-pill btn mutted2 registervalidation" >Register</button>
                 <div>Allready have account? <a class="text-decoration-none" href="#">Login</a></div>

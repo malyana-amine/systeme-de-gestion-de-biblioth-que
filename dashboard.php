@@ -24,23 +24,22 @@ require 'logout.php';
 include 'sidebar.php';
 ?>
 
-
     <div class="bodycolor col-10">
         <div>
             <h1 class="px-5 py-3">Dashboard</h1>
         </div>
         <div class="bg-dark mx-5 divline"></div>
-        <div class=" d-flex justify-content-between flex-wrap p-5">
+        <div class=" d-flex justify-content-around flex-wrap p-5">
 
-<div class="bdcolor divs d-flex justify-content-around m-2">
+<div class="bdcolor  col-md-4 divs d-flex justify-content-around m-1">
     <h3 class=" pt-4">Books</h3>
     <h3 class="pt-5 mt-5"><?php echo counterbooks() ?></h3>
 </div>
-<div class="bdcolor1 divs d-flex justify-content-around m-2">
+<div class="bdcolor1  col-md-4 divs d-flex justify-content-around m-1">
     <h3 class=" pt-4">Admins</h3>
     <h3 class="pt-5 mt-5"><?php echo counteradmin() ?></h3>
 </div>
-<div class="bdcolor2 divs d-flex justify-content-around m-2">
+<div class="bdcolor2  col-md-4 divs d-flex justify-content-around m-1">
     <h3 class="pt-4">Users</h3>
     <h3 class="pt-5 mt-5">??</h3>
 </div>
