@@ -43,7 +43,7 @@ register();
         </div>
                 </div>
                 <button name="submit" type="submit" class="m-2 pb-2 fs-4 fw-bold px-4 py-2 rounded-pill btn mutted2 registervalidation" >Register</button>
-                <div>Allready have account? <a class="text-decoration-none" href="login.php">Login</a></div>
+                <div>Allready have account? <a class="text-decoration-none" href="login.php">Log In</a></div>
                
 
 </form>
