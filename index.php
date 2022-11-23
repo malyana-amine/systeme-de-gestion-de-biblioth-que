@@ -30,11 +30,11 @@ require 'database.php';
 <section class="  scolor d-flex flex-wrap  ">
   <div class="ps-3 col-11 col-sm-7 text-sm-start text-center">
     <div>
-      <h1 class=" bold py-5 my-3 fs-sm-5">The Bookworm</h1>
+      <h1 class=" bold py-4 my-3 fs-sm-5">The Bookworm</h1>
     </div>
 
     <div>
-      <h3 class=" boldh3 pt-5">A universe of books.</h3>
+      <h3 class=" boldh3 pt-4">A universe of books.</h3>
     </div>
 
     <div>
@@ -42,7 +42,7 @@ require 'database.php';
     </div>
 
     <div>
-      <h4 class=" boldh4 pb-3 mb-3">Your account is your key to<br> unlock a universe of opportunities</h4>
+      <h4 class=" boldh4 pb-2 mb-3">Your account is your key to<br> unlock a universe of opportunities</h4>
     </div>
 
     <a class="m-2 pb-2 fs-4 fw-bold px-4 py-2 rounded-pill btn mutted2" href="register.php" type="submit">Register</a>

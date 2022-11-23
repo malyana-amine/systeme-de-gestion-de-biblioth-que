@@ -43,12 +43,12 @@ include 'sidebar.php';
 
     <div class="bodycolor col-10 ">
         <div class="d-flex justify-content-between">
-            <h1 class="px-5 py-3">Dashboard</h1>
-            <button  type="button" class="btn btn-primary p-2 m-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="">add Book</button>
+            <h1 class="px-sm-5 py-3">Books</h1>
+            <button  type="button" class="m-4 pb-1 fs-5 fw-bold px-4 py-1 rounded-pill btn mutted2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="">add Book</button>
         </div>
         <div class="bg-dark mx-5 divline"></div>
 
-        <div class="p-5">
+        <div class="p-5 table-responsive">
         <table class="table ">
                         <thead>
                             <tr class=" text-muted">
@@ -88,7 +88,7 @@ include 'sidebar.php';
                 </td>
 
                 <td class="align-middle">
-                <div id="description<?php  echo $row['id']  ?>" class=""><?php  echo ''.$row['description'].''  ?></div>
+                <div title="<?php  echo $row['description']  ?>" id="description<?php  echo $row['id']  ?>" class=""><?php  echo substr($row['description'], 0, 50)?>...</div>    
                 </td>
                   
                      </tr>

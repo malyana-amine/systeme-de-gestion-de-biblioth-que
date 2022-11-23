@@ -2,12 +2,12 @@
 
 <img class="logo2 p-2 " src="maquette/logo/Untitled-2.png" alt="">
 
-<div class="text-start d-flex  pb-5 mb-5 ">
+<div class="text-start d-flex  pb-sm-5 mb-sm-5 ">
     <div class="col-md-3 col-6 "></div>
     <ul class="text-white list-unstyled ">
-        <li class="py-3 d-flex"><i title="dashboard" class=" pe-3 pt-1 fa-solid fa-house-user"></i><a class="text-decoration-none text-white d-none d-md-block " title="dashboard" href="#"> dashboard</a> </li>
-        <li class="py-3 d-flex"><i title="Books" class="pe-3 pt-1 fa-solid fa-book"></i><a class="text-decoration-none text-white d-none d-md-block" title="Books" href="#"> Books</a> </li>
-        <li class="py-3 d-flex"><i title="users" class="pe-3 pt-1 fa-solid fa-users "></i><a class="text-decoration-none text-white d-none d-md-block" title="users" href="#"> users</a> </li>
+        <li class="py-3 d-flex"><a href="dashboard.php" title="dashboard" class=" text-white text-decoration-none pe-3  fa-solid fa-house-user"></a><a class="text-decoration-none text-white d-none d-md-block " title="dashboard" href="dashboard.php">Dashboard</a> </li>
+        <li class="py-3 d-flex"><a href="books.php" title="Books" class="text-white text-decoration-none pe-3  fa-solid fa-book"></a><a class="text-decoration-none text-white d-none d-md-block" title="Books" href="books.php">Books</a> </li>
+        <li class="py-3 d-flex"><a title="users" class=" text-white text-decoration-none pe-3  fa-solid fa-users "></a><a class="text-decoration-none text-white d-none d-md-block" title="users" href="#">Users</a> </li>
     </ul>
 </div>
 <div class=" d-flex flex-column align-items-center">
