@@ -7,7 +7,6 @@ function savebook(){
 
         if( isset($_POST['submit'])) {
            
-            // --------------
             $id = $_SESSION['id'];
             $title = $_POST['title'];
             $description = $_POST['description'];
@@ -20,7 +19,6 @@ function savebook(){
             $target = "img/".$newname;
             move_uploaded_file($_FILES['image']['tmp_name'], $target);
 
-                      
              $sql = " INSERT INTO `books`(`title`, `description`, `publisher`, `img`) VALUES ('$title','$description','$id','$newname')"; 
  
             mysqli_query($conn,$sql);

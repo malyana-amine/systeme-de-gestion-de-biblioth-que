@@ -34,7 +34,6 @@ inputs.forEach(input => {
            })
 });
 
-//email regex
 function validateEmail() {
     if (email_regex.test(email.value)) {
         email.classList.remove("text-danger");

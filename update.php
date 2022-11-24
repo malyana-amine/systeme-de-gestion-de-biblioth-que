@@ -20,7 +20,7 @@ function updatebook(){
             move_uploaded_file($_FILES['image1']['tmp_name'], $target);
          
         $id   =  $_POST['hidinput'];
-       // die($type . $priority . $status . $title . $date . $description .$id) ;
+
         $sql1 = "UPDATE `books` 
                 SET`title`='$title',`description`='$description',`img`='$newname'
                  WHERE `id`='$id'";

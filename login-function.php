@@ -2,10 +2,6 @@
 require 'database.php';
 
 
-
-
-
-
 function login(){
     session_start();
     global $conn;
@@ -46,6 +42,3 @@ function login(){
         }}
 }
 ?>
-
-
-

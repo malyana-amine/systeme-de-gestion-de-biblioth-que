@@ -16,7 +16,6 @@ function getbook(){
    }
   
            return $GLOBALS['result'];
-           
       
     }
     
