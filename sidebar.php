@@ -11,11 +11,9 @@
     </ul>
 </div>
 <div class=" d-flex flex-column align-items-center">
-   
     
-        
 <form method="POST" class="btn-group dropup p-1">
-          <div class="align-items-center d-flex flex-wrap justify-content-center">
+          <div class="align-items-center d-flex flex-wrap-reverse justify-content-center">
           <div id="profilpic" class = "bg-warning rounded-circle fs-5 divpad " style="width:35px ; height:35px" ></div>
             <h6 class="text-white ps-1 pe-3 pt-2 d-none d-sm-block" id="flname"><?php echo  $_SESSION['first_name'].' '.$_SESSION['last_name'] ?></h6>
             <div type="" class=" px-1" data-bs-toggle="dropdown" aria-expanded="false">

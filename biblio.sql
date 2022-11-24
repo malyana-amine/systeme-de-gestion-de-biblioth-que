@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 17 nov. 2022 à 23:53
+-- Généré le : jeu. 24 nov. 2022 à 10:08
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.1.10
 
@@ -40,10 +40,14 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `first_name`, `last_name`, `email`, `password`) VALUES
-(5, 'fname', 'lname', 'email', 'password'),
-(43, 'aqw@aze', 'aqw@aze', 'aqw@aze', 'aqw@aze'),
-(45, 'amine', 'malyana', 'amine@gmail.com', 'amine'),
-(46, 'abdo', 'abdo', 'abdo@gmail.com', 'abdo@gmail.com');
+(46, 'abdo', 'abdo', 'abdo@gmail.com', 'abdo@gmail.com'),
+(49, 'am', 'ine', 'amins@gmail.com', 'amins@gmail.com'),
+(51, 'amine', 'malyana', 'amine@gmail.com', '1234'),
+(52, 'amine', 'malyana', 'aminemalyana@gmail.com', 'aminemalyana@gmail.com'),
+(53, 'amine', 'malyana', 'aminemlya@gmail.com', 'aminemlya@gmail.com'),
+(54, 'nouhaila', 'khaouti', 'nouhaila@gmail.com', 'nouhaila@gmail.com'),
+(55, 'qzdzdazdazd', 'azdazdazdazdza', 'amazdazdine@gmail.com', 'aminezdadazd'),
+(56, 'qdqfzdzqd', 'azdazdazd', 'amineazdazd@gmail.com', 'amineazdazd');
 
 -- --------------------------------------------------------
 
@@ -64,8 +68,12 @@ CREATE TABLE `books` (
 --
 
 INSERT INTO `books` (`id`, `title`, `description`, `publisher`, `img`) VALUES
-(33, 'Indira Clarke', 'Mollit ea nobis face', 46, 'book-637680b95bd65.jpg'),
-(34, 'Keelie Merrill', 'In in doloremque lib', 46, 'book-637680c22ad7f.jpg');
+(49, 'Omar Bruce', 'Ut ex dolore ipsum e', 51, 'book-637e28e63f527.jpg'),
+(50, 'Noel Thomas', 'Et veniam nisi ut e', 51, 'book-637e28f5a06c7.jpg'),
+(51, 'Gillian Dudley', 'Nulla accusamus quod', 51, 'book-637f2ef30c21e.webp'),
+(52, 'Randall Norris', 'Magnam aliqua Liber', 51, 'book-637f2efbdb4c8.webp'),
+(53, 'Autumn Gray', 'Esse culpa neque ull', 51, 'book-637f2f06af06e.webp'),
+(54, 'Hyacinth Riggs', 'Maxime soluta hic qu', 51, 'book-637f2f223f745.jpg');
 
 --
 -- Index pour les tables déchargées
@@ -92,13 +100,13 @@ ALTER TABLE `books`
 -- AUTO_INCREMENT pour la table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT pour la table `books`
 --
 ALTER TABLE `books`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- Contraintes pour les tables déchargées

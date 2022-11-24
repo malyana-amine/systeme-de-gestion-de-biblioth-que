@@ -22,7 +22,7 @@ function update(id) {
     document.getElementById("message-text1").value = btn_description;
 
     document.getElementById("imageupdat").setAttribute("src",btn_image);
-    
+
     }
 
     // get first letre of the user name 
@@ -32,30 +32,3 @@ function update(id) {
     let profpic = document.getElementById("profilpic").textContent = flname[0].toUpperCase() ;
 
     
-
-    
-
-    // const name_regex = /^[a-zA-Z]{3,}$/;
-
-    // let inputname = document.querySelectorAll(".nameinput");
-    // let divname = document.getElementsByClassName("fullnameerrortext");
-    
-
-    // inputname.forEach(element => {
-    //     element.addEventListener( "keyup", ()=>{
-    //         fullnamevalidate()
-    //     }
-        
-    //     )
-    // });
-
-    // function fullnamevalidate(){
-    //     if(name_regex.test(inputname.value)){
-    //         divname.classList.remove('border-success');
-    //         divname.textContent="";
-    //     } else {
-    //         divname.classList.add('border-danger');
-    //         divname.textContent="please entre a valid name";
-    //     }
-
-    // }
